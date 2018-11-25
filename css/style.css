@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,900");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900");
 .row:after, .row:before {
   display: table;
   content: "";
@@ -7,9 +8,15 @@
 
 body {
   font-family: "Raleway", sans-serif;
+  font-size: 16px;
   margin: 0;
   padding: 0;
-  font-size: 16px;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
 }
 
 header::after {
@@ -47,6 +54,14 @@ header::after {
   margin-top: 1rem;
 }
 
+.navbar-brand {
+  padding-left: 15rem;
+}
+
+.navbar-nav {
+  padding-right: 15rem;
+}
+
 .navbar-nav li a {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -54,7 +69,6 @@ header::after {
   font-weight: bold;
   font-size: 0.8em;
   color: rgba(255, 255, 255, 0.75);
-  margin-right: 10px;
   letter-spacing: 0.1em;
 }
 
@@ -71,6 +85,57 @@ header::after {
 
 .navbar-toggle span {
   background-color: rgba(255, 255, 255, 0.75);
+}
+
+.jumbotron {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.jumbotron .wrapper {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+}
+
+.jumbotron .wrapper h1 {
+  text-transform: uppercase;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 5em;
+  font-weight: 600;
+  flex: 0 1 auto;
+  max-width: 90rem;
+  margin-top: 10rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.jumbotron .wrapper P {
+  font-size: 1.8em;
+  max-width: 80rem;
+  flex: 0 1 auto;
+  margin-top: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.jumbotron .wrapper a {
+  margin-top: 8rem;
+  padding: 12px 45px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.2em;
 }
 
 /*# sourceMappingURL=style.css.map */
