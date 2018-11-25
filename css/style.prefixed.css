@@ -21,7 +21,7 @@ body {
 
 header::after {
   content: '';
-  background-image: url(../images/bg1.jpeg);
+  background-image: url(../images/bg-cyber.jpg);
   position: absolute;
   top: 0;
   right: 0;
@@ -33,7 +33,7 @@ header::after {
 }
 
 .layer {
-  background-color: rgba(43, 46, 74, 0.8);
+  background-color: rgba(43, 46, 74, 0.5);
   position: absolute;
   top: 0;
   left: 0;
@@ -129,6 +129,7 @@ header::after {
 
 .jumbotron .wrapper P {
   font-size: 1.8em;
+  font-weight: 500;
   max-width: 80rem;
   -ms-flex: 0 1 auto;
       flex: 0 1 auto;

@@ -5,8 +5,9 @@ $body-font: 'Raleway', sans-serif;
 $second-font: 'Source Sans Pro', sans-serif;
 $font-size-body: 16px;
 
-$jumbotron-background: url(../images/bg1.jpeg);
-$jumbotron-layer-color: rgba(43,46,74, 0.8);
+//$jumbotronX-background: url(../images/bg1.jpeg);
+$jumbotron-background: url(../images/bg-cyber.jpg);
+$jumbotron-layer-color: rgba(43,46,74, 0.5);
 
 $color-white: #fff;
 $brand-color: #66697e;
@@ -133,6 +134,7 @@ header {
         }
         P {
             font-size: 1.8em;
+            font-weight: 500;
             max-width: 80rem;
             flex: 0 1 auto;
             margin-top: 2rem;
