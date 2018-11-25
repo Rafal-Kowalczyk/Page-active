@@ -8,7 +8,7 @@
     "test:js": "jshint js",
     "init-project": "npm run init:dirs && npm run init:files && npm run init:gitignore && npm run init:npm-install",
     "init:dirs": "mkdirp src css images js",
-    "init:files": "touch README.md index.html src/style.scss js/script.js",
+    "init:files": "touch README.md index.html src/sass/style.scss js/script.js",
     "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
     "init:npm-install": "npm install",
     "build": "npm run test && npm run build:clean && npm run build:sass && npm run build:autoprefixer",
