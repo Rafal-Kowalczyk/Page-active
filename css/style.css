@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
   padding: 0;
 }
@@ -137,6 +137,38 @@ header::after {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 0.2em;
+}
+
+.actions > div {
+  margin-bottom: 2rem;
+  margin-top: 8rem;
+}
+
+.actions > div .actions__box {
+  text-align: center;
+  font-size: 0.8em;
+  padding: 2rem 6rem;
+  min-height: 32rem;
+}
+
+.actions > div .actions__box:hover img {
+  filter: hue-rotate(192deg) opacity(0.7) saturate(110%);
+  transform: rotateY(360deg);
+  transition: transform 1s ease-in, filter .3s .2s ease-in;
+}
+
+.actions > div img {
+  transition: filter  .4s ease-in;
+}
+
+.actions > div h4 {
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-top: 2rem;
+}
+
+.actions > div p {
+  padding-top: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
