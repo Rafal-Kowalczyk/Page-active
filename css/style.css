@@ -33,7 +33,7 @@ header::after {
 }
 
 .layer {
-  background-color: rgba(43, 46, 74, 0.5);
+  background-color: rgba(43, 46, 74, 0.7);
   position: absolute;
   top: 0;
   left: 0;
@@ -112,27 +112,28 @@ header::after {
 .jumbotron .wrapper h1 {
   text-transform: uppercase;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 5em;
-  font-weight: 600;
+  font-size: 4.8em;
+  font-weight: 700;
   flex: 0 1 auto;
   max-width: 90rem;
-  margin-top: 10rem;
+  margin-top: 0;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+  line-height: 1;
 }
 
 .jumbotron .wrapper P {
-  font-size: 1.8em;
+  font-size: 1.3em;
   font-weight: 500;
   max-width: 80rem;
   flex: 0 1 auto;
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
 
 .jumbotron .wrapper a {
-  margin-top: 8rem;
+  margin-top: 5rem;
   padding: 12px 45px;
   text-transform: uppercase;
   font-weight: 600;
