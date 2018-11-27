@@ -142,7 +142,7 @@ header::after {
 
 .actions > div {
   margin-bottom: 2rem;
-  margin-top: 8rem;
+  margin-top: 10rem;
 }
 
 .actions > div .actions__box {
@@ -153,7 +153,7 @@ header::after {
 }
 
 .actions > div .actions__box:hover img {
-  filter: hue-rotate(192deg) opacity(0.7) saturate(110%);
+  filter: hue-rotate(190deg) opacity(0.9) saturate(90%);
   transform: rotateY(360deg);
   transition: transform 1s ease-in, filter .3s .2s ease-in;
 }
@@ -170,6 +170,95 @@ header::after {
 
 .actions > div p {
   padding-top: 1rem;
+}
+
+.gallery {
+  padding: 7rem 0 0 0;
+}
+
+.gallery .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.gallery .gallery__box {
+  padding: 0;
+  text-align: center;
+  height: 35rem;
+  padding: 1px;
+}
+
+.gallery .gallery--project {
+  height: 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery .gallery--project:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility .5s, opacity .5s;
+  background-color: rgba(67, 127, 196, 0.8);
+}
+
+.gallery .gallery--project:hover:after, .gallery .gallery--project:focus:after {
+  visibility: visible;
+  opacity: 1;
+}
+
+.gallery .gallery--project:hover .gallery--img, .gallery .gallery--project:focus .gallery--img {
+  transform: scale(1.1);
+}
+
+.gallery .gallery--project:hover .gallery--content, .gallery .gallery--project:focus .gallery--content {
+  visibility: visible;
+  opacity: 1;
+}
+
+.gallery .gallery--img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .5s;
+  transform: scale(1);
+  backface-visibility: hidden;
+}
+
+.gallery .gallery--content {
+  top: 50%;
+  right: 0;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  color: rgba(112, 0, 0, 0.918);
+  transition: visibility .5s, opacity .5s;
+  transform: translateY(-50%);
+  backface-visibility: hidden;
+}
+
+.gallery .gallery--content h3 {
+  text-transform: uppercase;
+  font-size: 2.5em;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.gallery .gallery--content p {
+  font-weight: 600;
+  font-size: 1.5em;
 }
 
 /*# sourceMappingURL=style.css.map */
