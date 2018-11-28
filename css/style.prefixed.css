@@ -325,7 +325,7 @@ header::after {
 .ourTeam .fab:hover {
   opacity: 1;
   cursor: pointer;
-  transform: scale(1.1);
+  transform: scale(1.2);
   color: rgba(67, 127, 196, 0.8);
   border: 1px solid rgba(67, 127, 196, 0.8);
 }
