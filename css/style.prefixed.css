@@ -180,7 +180,7 @@ header::after {
 }
 
 .gallery {
-  padding: 7rem 0 0 0;
+  padding: 5rem 0 0 0;
 }
 
 .gallery .row {
@@ -252,7 +252,7 @@ header::after {
   z-index: 1;
   visibility: hidden;
   opacity: 0;
-  color: rgba(112, 0, 0, 0.918);
+  color: rgba(112, 0, 0, 0.9);
   transition: visibility .5s, opacity .5s;
   transform: translateY(-50%);
   -webkit-backface-visibility: hidden;
@@ -261,13 +261,72 @@ header::after {
 
 .gallery .gallery--content h3 {
   text-transform: uppercase;
-  font-size: 2.5em;
+  font-size: 1.8em;
   font-weight: 600;
-  letter-spacing: 1.5px;
+  letter-spacing: 2px;
 }
 
 .gallery .gallery--content p {
   font-weight: 600;
-  font-size: 1.5em;
+  font-size: 1.2em;
+}
+
+.ourTeam {
+  padding-top: 10rem;
+  padding-bottom: 2rem;
+}
+
+.ourTeam .ourTeam__box {
+  padding: 3rem;
+}
+
+.ourTeam img {
+  width: 100%;
+}
+
+.ourTeam h2 {
+  font-size: 1.45em;
+  font-weight: 600;
+  padding-left: 1rem;
+}
+
+.ourTeam h3 {
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: rgba(112, 0, 0, 0.9);
+  padding-left: 1rem;
+}
+
+.ourTeam p {
+  font-size: 0.9em;
+  padding-left: 1rem;
+}
+
+.ourTeam .ourTeam__social {
+  padding-left: 1rem;
+}
+
+.ourTeam .fab {
+  width: 30px;
+  height: 30px;
+  font-size: 1em;
+  text-align: center;
+  margin-right: 3px;
+  margin-top: 2rem;
+  border: 1px solid #66697e;
+  opacity: 0.5;
+  color: #66697e;
+  transition: .3s;
+  padding-top: 6px;
+}
+
+.ourTeam .fab:hover {
+  opacity: 1;
+  cursor: pointer;
+  transform: scale(1.1);
+  color: rgba(67, 127, 196, 0.8);
+  border: 1px solid rgba(67, 127, 196, 0.8);
 }
 /*# sourceMappingURL=style.prefixed.css.map */
