@@ -267,7 +267,7 @@ header::after {
 }
 
 .ourTeam .ourTeam__box {
-  padding: 3rem;
+  padding: 4rem;
 }
 
 .ourTeam img {
@@ -295,7 +295,9 @@ header::after {
 }
 
 .ourTeam .ourTeam__social {
-  padding-left: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .ourTeam .fab {
@@ -303,7 +305,6 @@ header::after {
   height: 30px;
   font-size: 1em;
   text-align: center;
-  margin-right: 3px;
   margin-top: 2rem;
   border: 1px solid #66697e;
   opacity: 0.5;
@@ -318,6 +319,43 @@ header::after {
   transform: scale(1.2);
   color: rgba(67, 127, 196, 0.8);
   border: 1px solid rgba(67, 127, 196, 0.8);
+}
+
+.clients {
+  padding: 8rem 0 0 0;
+}
+
+.clients .carousel {
+  background-color: #66697e;
+}
+
+.clients .carousel img {
+  width: 50%;
+}
+
+.clients .carousel-caption {
+  background-color: #66697e;
+  margin-bottom: 2rem;
+  padding: 2rem 2.5rem;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+.clients .carousel-caption q {
+  font-style: italic;
+  font-size: calc(12px + 5 * ((100vw - 320px) / 448));
+  letter-spacing: 1.5px;
+}
+
+.clients .carousel-caption p {
+  text-transform: uppercase;
+  margin-top: 3rem;
+  letter-spacing: 1.2px;
 }
 
 /*# sourceMappingURL=style.css.map */

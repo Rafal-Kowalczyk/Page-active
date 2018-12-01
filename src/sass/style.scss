@@ -271,7 +271,7 @@ header {
     padding-top: 10rem;
     padding-bottom: 2rem;
     .ourTeam__box {
-        padding: 3rem;
+        padding: 4rem;
     }
     img {
         width: 100%;
@@ -294,14 +294,15 @@ header {
         padding-left: $padding-team;
     }
     .ourTeam__social {
-        padding-left: $padding-team;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
     }
     .fab {
         width: 30px;
         height: 30px;
         font-size: 1em;
         text-align: center;
-        margin-right: 3px;
         margin-top: 2rem;
         border: 1px solid $brand-color;
         opacity: 0.5;
@@ -314,6 +315,41 @@ header {
             transform: scale(1.2);
             color: $layer-social-color;
             border: 1px solid $layer-social-color;
+        }
+    }
+}
+
+//Section references
+.clients {
+    padding: 8rem 0 0 0;
+
+    .carousel {
+        background-color: $brand-color;
+        img {
+            width: 50%;
+        }
+    }
+    .carousel-caption {
+        background-color: $brand-color;
+        margin-bottom: 2rem;
+        padding: 2rem 2.5rem;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        right: 0;
+        bottom: 0;
+        display: flex;
+       //justify-content: center;
+        align-items: center;
+        q {
+            font-style: italic;
+            font-size: calc(12px + 5 * ((100vw - 320px) / 448));
+            letter-spacing: 1.5px;
+        }
+        p {
+            text-transform: uppercase;
+            margin-top: 3rem;
+            letter-spacing: 1.2px;
         }
     }
 }
