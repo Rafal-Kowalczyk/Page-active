@@ -30,6 +30,27 @@ $padding-team: 1rem;
     @include clearfix;
 }
 
+@mixin social-media {
+    width: 32px;
+    height: 32px;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 2rem;
+    margin-right: 0.5rem;
+    border: 1px solid rgba(117, 128, 161, 1);
+    opacity: 0.5;
+    color: rgba(117, 128, 161, 1);
+    transition: .3s;
+    padding-top: 6px;
+}
+@mixin social-media-hover {
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(1.2);
+    color: rgb(38, 54, 99);
+    border: 1px solid rgb(38, 54, 99);
+}
+
 body {
     font-family: $body-font;
     font-size: $font-size-body;
@@ -225,7 +246,7 @@ header {
             visibility: hidden;
             opacity: 0;
             transition: visibility .5s, opacity .5s;
-            background-color: $layer-social-color;
+            background-color: rgba(193, 200, 217, 0.7);
         }
         &:hover, &:focus{
              &:after {
@@ -258,18 +279,18 @@ header {
         z-index: 1;
         visibility: hidden;
         opacity: 0;
-        color: $gallery-content-color;
+        color: rgb(38, 54, 99);
         transition: visibility .5s, opacity .5s;
         transform: translateY(-50%);
         backface-visibility: hidden;
         h3 {
             text-transform: uppercase;
-            font-size: 1.8em;
-            font-weight: 600;
+            font-size: 2em;
+            font-weight: 900;
             letter-spacing: 2px;
         }
         p {
-            font-weight: 600;
+            font-weight: 700;
             font-size: 1.2em;
         }
     }
@@ -295,7 +316,7 @@ header {
         text-transform: uppercase;
         letter-spacing: 1px;
         font-weight: 600;
-        color: $gallery-content-color;
+        color: rgba(84, 66, 61, 0.9);
         padding-left: $padding-team;
     }
     p {
@@ -303,23 +324,9 @@ header {
         padding-left: $padding-team;
     }
     .fab {
-        width: 30px;
-        height: 30px;
-        font-size: 1em;
-        text-align: center;
-        margin-top: 2rem;
-        margin-right: 0.5rem;
-        border: 1px solid $brand-color;
-        opacity: 0.5;
-        color: $brand-color;
-        transition: .3s;
-        padding-top: 6px;
+        @include social-media();
         &:hover {
-            opacity: 1;
-            cursor: pointer;
-            transform: scale(1.2);
-            color: $layer-social-color;
-            border: 1px solid $layer-social-color;
+            @include social-media-hover();
         }
     }
 }
@@ -329,14 +336,14 @@ header {
     padding: 8rem 0 0 0;
 
     .carousel {
-        background-color: $brand-color;
+        background-color: rgb(38, 54, 99);
         img {
             width: 50%;
             height: 100%;
         }
     }
     .carousel-caption {
-        background-color: $brand-color;
+        background-color: rgb(38, 54, 99);
         margin-bottom: 2rem;
         padding: 2rem 2.5rem;
         position: absolute;
@@ -366,8 +373,8 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 34rem;
-    padding: 2rem 2.5rem;
+    min-height: 40rem;
+    margin-top: 4rem;
     h2 {
         font-size: 2.5em;
         font-weight: 300;
@@ -383,5 +390,57 @@ header {
     a {
         padding: 1.4rem 10rem;
         margin-top: 3rem;
+    }
+}
+
+// Footer
+footer {
+    position: relative;
+    min-height: 34rem;
+    background-color: rgb(193, 200, 217);
+    color: rgb(38, 54, 99);
+    text-align: center;
+    margin-top: 5rem;
+    .row {
+        padding-top: 5rem;
+    }
+    h3 {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1.2em;
+        margin-bottom: 3rem;
+    }
+    p {
+        color: rgba(117, 128, 161, 1);
+        font-weight: 500;
+        line-height: 1.8;
+    }
+    .footer__social i {
+        @include social-media();
+        width: 40px;
+        height: 40px;
+        font-size: 1.2em;
+        padding-top: 7px;
+        margin-top: 0;
+        &:hover {
+            @include social-media-hover();
+        }
+    }
+    .credits {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 6rem;
+        background-color: rgb(38, 54, 99);
+        p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgb(193, 200, 217);
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
     }
 }

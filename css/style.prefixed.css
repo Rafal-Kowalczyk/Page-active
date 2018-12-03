@@ -224,7 +224,7 @@ header::after {
   visibility: hidden;
   opacity: 0;
   transition: visibility .5s, opacity .5s;
-  background-color: rgba(67, 127, 196, 0.8);
+  background-color: rgba(193, 200, 217, 0.7);
 }
 
 .gallery .gallery--project:hover:after, .gallery .gallery--project:focus:after {
@@ -261,7 +261,7 @@ header::after {
   z-index: 1;
   visibility: hidden;
   opacity: 0;
-  color: rgba(112, 0, 0, 0.9);
+  color: #263663;
   transition: visibility .5s, opacity .5s;
   transform: translateY(-50%);
   -webkit-backface-visibility: hidden;
@@ -270,13 +270,13 @@ header::after {
 
 .gallery .gallery--content h3 {
   text-transform: uppercase;
-  font-size: 1.8em;
-  font-weight: 600;
+  font-size: 2em;
+  font-weight: 900;
   letter-spacing: 2px;
 }
 
 .gallery .gallery--content p {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.2em;
 }
 
@@ -304,7 +304,7 @@ header::after {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 600;
-  color: rgba(112, 0, 0, 0.9);
+  color: rgba(84, 66, 61, 0.9);
   padding-left: 1rem;
 }
 
@@ -314,15 +314,15 @@ header::after {
 }
 
 .ourTeam .fab {
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   font-size: 1em;
   text-align: center;
   margin-top: 2rem;
   margin-right: 0.5rem;
-  border: 1px solid #66697e;
+  border: 1px solid #7580a1;
   opacity: 0.5;
-  color: #66697e;
+  color: #7580a1;
   transition: .3s;
   padding-top: 6px;
 }
@@ -331,8 +331,8 @@ header::after {
   opacity: 1;
   cursor: pointer;
   transform: scale(1.2);
-  color: rgba(67, 127, 196, 0.8);
-  border: 1px solid rgba(67, 127, 196, 0.8);
+  color: #263663;
+  border: 1px solid #263663;
 }
 
 .clients {
@@ -340,7 +340,7 @@ header::after {
 }
 
 .clients .carousel {
-  background-color: #66697e;
+  background-color: #263663;
 }
 
 .clients .carousel img {
@@ -349,7 +349,7 @@ header::after {
 }
 
 .clients .carousel-caption {
-  background-color: #66697e;
+  background-color: #263663;
   margin-bottom: 2rem;
   padding: 2rem 2.5rem;
   position: absolute;
@@ -384,8 +384,8 @@ header::after {
       align-items: center;
   -ms-flex-pack: center;
       justify-content: center;
-  min-height: 34rem;
-  padding: 2rem 2.5rem;
+  min-height: 40rem;
+  margin-top: 4rem;
 }
 
 .download h2 {
@@ -405,5 +405,77 @@ header::after {
 .download a {
   padding: 1.4rem 10rem;
   margin-top: 3rem;
+}
+
+footer {
+  position: relative;
+  min-height: 34rem;
+  background-color: #c1c8d9;
+  color: #263663;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+footer .row {
+  padding-top: 5rem;
+}
+
+footer h3 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.2em;
+  margin-bottom: 3rem;
+}
+
+footer p {
+  color: #7580a1;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+footer .footer__social i {
+  width: 32px;
+  height: 32px;
+  font-size: 1em;
+  text-align: center;
+  margin-top: 2rem;
+  margin-right: 0.5rem;
+  border: 1px solid #7580a1;
+  opacity: 0.5;
+  color: #7580a1;
+  transition: .3s;
+  padding-top: 6px;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2em;
+  padding-top: 7px;
+  margin-top: 0;
+}
+
+footer .footer__social i:hover {
+  opacity: 1;
+  cursor: pointer;
+  transform: scale(1.2);
+  color: #263663;
+  border: 1px solid #263663;
+}
+
+footer .credits {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 6rem;
+  background-color: #263663;
+}
+
+footer .credits p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #c1c8d9;
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 /*# sourceMappingURL=style.prefixed.css.map */
