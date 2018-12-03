@@ -3,7 +3,7 @@
 
 $body-font: 'Raleway', sans-serif;
 $second-font: 'Source Sans Pro', sans-serif;
-$font-size-body: 16px;
+$font-size-body: 18px;
 
 //$jumbotronX-background: url(../images/bg1.jpeg);
 $jumbotron-background: url(../images/bg-cyber.jpg);
@@ -147,12 +147,21 @@ header {
             padding-right: 1.5rem;
         }
         a {
-            margin-top: 5rem;
-            padding: 12px 45px;
-            text-transform: uppercase;
-            font-weight: 600;
-            letter-spacing: 0.2em;
+            margin-top: 8rem;
+            padding: 1.4rem 6rem;
+
         }
+    }
+}
+.btn {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    transition: .2s;
+    &:hover {
+        font-weight: 600;
+        //transform: scale(1.1);
     }
 }
 
@@ -293,17 +302,13 @@ header {
         font-size: 0.9em;
         padding-left: $padding-team;
     }
-    .ourTeam__social {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
     .fab {
         width: 30px;
         height: 30px;
         font-size: 1em;
         text-align: center;
         margin-top: 2rem;
+        margin-right: 0.5rem;
         border: 1px solid $brand-color;
         opacity: 0.5;
         color: $brand-color;
@@ -327,6 +332,7 @@ header {
         background-color: $brand-color;
         img {
             width: 50%;
+            height: 100%;
         }
     }
     .carousel-caption {
@@ -343,7 +349,7 @@ header {
         align-items: center;
         q {
             font-style: italic;
-            font-size: calc(12px + 5 * ((100vw - 320px) / 448));
+            font-size: calc(16px + 5 * ((100vw - 320px) / 448));
             letter-spacing: 1.5px;
         }
         p {
@@ -351,5 +357,31 @@ header {
             margin-top: 3rem;
             letter-spacing: 1.2px;
         }
+    }
+}
+
+// Section download
+.download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 34rem;
+    padding: 2rem 2.5rem;
+    h2 {
+        font-size: 2.5em;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+    p {
+        text-transform: uppercase;
+        font-size: 0.8em;
+        letter-spacing: 1.5px;
+        font-weight: 600;
+        padding-top: 1.6rem;
+    }
+    a {
+        padding: 1.4rem 10rem;
+        margin-top: 3rem;
     }
 }

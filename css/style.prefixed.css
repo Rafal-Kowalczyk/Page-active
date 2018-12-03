@@ -8,7 +8,7 @@
 
 body {
   font-family: "Raleway", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   margin: 0;
   padding: 0;
 }
@@ -140,11 +140,20 @@ header::after {
 }
 
 .jumbotron .wrapper a {
-  margin-top: 5rem;
-  padding: 12px 45px;
+  margin-top: 8rem;
+  padding: 1.4rem 6rem;
+}
+
+.btn {
   text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  transition: .2s;
+}
+
+.btn:hover {
   font-weight: 600;
-  letter-spacing: 0.2em;
 }
 
 .actions > div {
@@ -304,21 +313,13 @@ header::after {
   padding-left: 1rem;
 }
 
-.ourTeam .ourTeam__social {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-align: center;
-      align-items: center;
-}
-
 .ourTeam .fab {
   width: 30px;
   height: 30px;
   font-size: 1em;
   text-align: center;
   margin-top: 2rem;
+  margin-right: 0.5rem;
   border: 1px solid #66697e;
   opacity: 0.5;
   color: #66697e;
@@ -344,6 +345,7 @@ header::after {
 
 .clients .carousel img {
   width: 50%;
+  height: 100%;
 }
 
 .clients .carousel-caption {
@@ -363,7 +365,7 @@ header::after {
 
 .clients .carousel-caption q {
   font-style: italic;
-  font-size: calc(12px + 5 * ((100vw - 320px) / 448));
+  font-size: calc(16px + 5 * ((100vw - 320px) / 448));
   letter-spacing: 1.5px;
 }
 
@@ -371,5 +373,37 @@ header::after {
   text-transform: uppercase;
   margin-top: 3rem;
   letter-spacing: 1.2px;
+}
+
+.download {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  min-height: 34rem;
+  padding: 2rem 2.5rem;
+}
+
+.download h2 {
+  font-size: 2.5em;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.download p {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  padding-top: 1.6rem;
+}
+
+.download a {
+  padding: 1.4rem 10rem;
+  margin-top: 3rem;
 }
 /*# sourceMappingURL=style.prefixed.css.map */
