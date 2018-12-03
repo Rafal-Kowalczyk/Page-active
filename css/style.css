@@ -33,7 +33,7 @@ header::after {
 }
 
 .layer {
-  background-color: rgba(43, 46, 74, 0.7);
+  background-color: rgba(38, 54, 99, 0.7);
   position: absolute;
   top: 0;
   left: 0;
@@ -50,7 +50,7 @@ header::after {
 }
 
 .navbar .bottom-line {
-  border-bottom: 1px solid rgba(255, 255, 225, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 225, 0.2);
   margin-top: 1rem;
 }
 
@@ -146,7 +146,8 @@ header::after {
 }
 
 .btn:hover {
-  font-weight: 600;
+  font-weight: 700;
+  color: #c1c8d9;
 }
 
 .actions > div {
@@ -175,6 +176,7 @@ header::after {
   text-transform: uppercase;
   font-weight: 600;
   padding-top: 2rem;
+  color: #263663;
 }
 
 .actions > div p {
@@ -412,7 +414,7 @@ footer h3 {
 }
 
 footer p {
-  color: #7580a1;
+  color: media-social-color;
   font-weight: 500;
   line-height: 1.8;
 }

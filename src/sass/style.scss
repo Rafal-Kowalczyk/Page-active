@@ -1,55 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,900');
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900');
+@import "_base";
 
-$body-font: 'Raleway', sans-serif;
-$second-font: 'Source Sans Pro', sans-serif;
-$font-size-body: 18px;
-
-//$jumbotronX-background: url(../images/bg1.jpeg);
-$jumbotron-background: url(../images/bg-cyber.jpg);
-$jumbotron-layer-color: rgba(43,46,74, 0.7);
-
-$color-white: #fff;
-$brand-color: #66697e;
-$navbar-color: rgba(255, 255, 255, 0.75);
-$gallery-content-color: rgba(112, 0, 0, 0.9);
-$layer-social-color: rgba(67, 127, 196, 0.8);
-
-$padding-team: 1rem;
-
-
-@mixin clearfix() {
-    &:after,
-    &:before {
-        display: table;
-        content: "";
-        clear: both;
-    }
-}
-.row {
-    @include clearfix;
-}
-
-@mixin social-media {
-    width: 32px;
-    height: 32px;
-    font-size: 1em;
-    text-align: center;
-    margin-top: 2rem;
-    margin-right: 0.5rem;
-    border: 1px solid rgba(117, 128, 161, 1);
-    opacity: 0.5;
-    color: rgba(117, 128, 161, 1);
-    transition: .3s;
-    padding-top: 6px;
-}
-@mixin social-media-hover {
-    opacity: 1;
-    cursor: pointer;
-    transform: scale(1.2);
-    color: rgb(38, 54, 99);
-    border: 1px solid rgb(38, 54, 99);
-}
 
 body {
     font-family: $body-font;
@@ -96,7 +46,7 @@ header {
     z-index: 2;
     right: 0;
     .bottom-line {
-        border-bottom: 1px solid rgba(255, 255, 225, .15);
+        border-bottom: 1px solid $navbar-line-color;
         margin-top: 1rem;
     }
 }
@@ -181,7 +131,8 @@ header {
     letter-spacing: 0.1em;
     transition: .2s;
     &:hover {
-        font-weight: 600;
+        font-weight: 700;
+        color: $footer-background;
         //transform: scale(1.1);
     }
 }
@@ -209,6 +160,7 @@ header {
         text-transform: uppercase;
         font-weight: 600;
         padding-top: 2rem;
+        color: $color-blue;
     }
     p {
         padding-top: 1rem;
@@ -246,7 +198,7 @@ header {
             visibility: hidden;
             opacity: 0;
             transition: visibility .5s, opacity .5s;
-            background-color: rgba(193, 200, 217, 0.7);
+            background-color: $gallery-background;
         }
         &:hover, &:focus{
              &:after {
@@ -279,7 +231,7 @@ header {
         z-index: 1;
         visibility: hidden;
         opacity: 0;
-        color: rgb(38, 54, 99);
+        color: $color-blue;
         transition: visibility .5s, opacity .5s;
         transform: translateY(-50%);
         backface-visibility: hidden;
@@ -336,14 +288,14 @@ header {
     padding: 8rem 0 0 0;
 
     .carousel {
-        background-color: rgb(38, 54, 99);
+        background-color: $color-blue;
         img {
             width: 50%;
             height: 100%;
         }
     }
     .carousel-caption {
-        background-color: rgb(38, 54, 99);
+        background-color: $color-blue;
         margin-bottom: 2rem;
         padding: 2rem 2.5rem;
         position: absolute;
@@ -397,8 +349,8 @@ header {
 footer {
     position: relative;
     min-height: 34rem;
-    background-color: rgb(193, 200, 217);
-    color: rgb(38, 54, 99);
+    background-color: $footer-background;
+    color: $color-blue;
     text-align: center;
     margin-top: 5rem;
     .row {
@@ -411,7 +363,7 @@ footer {
         margin-bottom: 3rem;
     }
     p {
-        color: rgba(117, 128, 161, 1);
+        color: media-social-color;
         font-weight: 500;
         line-height: 1.8;
     }
@@ -432,13 +384,13 @@ footer {
         right: 0;
         left: 0;
         height: 6rem;
-        background-color: rgb(38, 54, 99);
+        background-color: $color-blue;
         p {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            color: rgb(193, 200, 217);
+            color: $footer-background;
             font-weight: 400;
             letter-spacing: 1px;
         }
