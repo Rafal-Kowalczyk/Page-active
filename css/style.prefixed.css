@@ -8,7 +8,7 @@
 
 body {
   font-family: "Raleway", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   margin: 0;
   padding: 0;
 }
@@ -67,7 +67,7 @@ header::after {
   padding-bottom: 15px;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 0.8em;
+  font-size: 0.9em;
   color: rgba(255, 255, 255, 0.75);
   letter-spacing: 0.1em;
 }
@@ -141,20 +141,23 @@ header::after {
 
 .jumbotron .wrapper a {
   margin-top: 8rem;
-  padding: 1.4rem 6rem;
+  padding: 1.2rem 6rem;
 }
 
 .btn {
   text-transform: uppercase;
-  font-weight: 300;
-  font-size: 1.5em;
+  font-weight: 700;
+  font-size: 1.2em;
   letter-spacing: 0.1em;
-  transition: .2s;
+  transition: .4s;
+  border: 2px solid rgba(245, 6, 6, 0.8);
+  background-color: rgba(245, 6, 6, 0.8);
+  color: #263663;
 }
 
 .btn:hover {
-  font-weight: 700;
-  color: #c1c8d9;
+  color: #263663;
+  border: 2px solid #263663;
 }
 
 .actions > div {
@@ -322,7 +325,7 @@ header::after {
   text-align: center;
   margin-top: 2rem;
   margin-right: 0.5rem;
-  border: 1px solid #7580a1;
+  border: 2px solid #7580a1;
   opacity: 0.5;
   color: #7580a1;
   transition: .3s;
@@ -332,9 +335,8 @@ header::after {
 .ourTeam .fab:hover {
   opacity: 1;
   cursor: pointer;
-  transform: scale(1.2);
   color: #263663;
-  border: 1px solid #263663;
+  border: 2px solid #263663;
 }
 
 .clients {
@@ -405,7 +407,7 @@ header::after {
 }
 
 .download a {
-  padding: 1.4rem 10rem;
+  padding: 1.2rem 10rem;
   margin-top: 3rem;
 }
 
@@ -442,7 +444,7 @@ footer .footer__social i {
   text-align: center;
   margin-top: 2rem;
   margin-right: 0.5rem;
-  border: 1px solid #7580a1;
+  border: 2px solid #7580a1;
   opacity: 0.5;
   color: #7580a1;
   transition: .3s;
@@ -450,16 +452,15 @@ footer .footer__social i {
   width: 40px;
   height: 40px;
   font-size: 1.2em;
-  padding-top: 7px;
+  padding-top: 8px;
   margin-top: 0;
 }
 
 footer .footer__social i:hover {
   opacity: 1;
   cursor: pointer;
-  transform: scale(1.2);
   color: #263663;
-  border: 1px solid #263663;
+  border: 2px solid #263663;
 }
 
 footer .credits {

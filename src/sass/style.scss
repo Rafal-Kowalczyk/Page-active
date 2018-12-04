@@ -61,7 +61,7 @@ header {
     padding-bottom: 15px;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 0.8em;
+    font-size: 0.9em;
     color: $navbar-color;
     letter-spacing: 0.1em;
     &:hover {
@@ -119,20 +119,23 @@ header {
         }
         a {
             margin-top: 8rem;
-            padding: 1.4rem 6rem;
+            padding: 1.2rem 6rem;
 
         }
     }
 }
 .btn {
     text-transform: uppercase;
-    font-weight: 300;
-    font-size: 1.5em;
+    font-weight: 700;
+    font-size: 1.2em;
     letter-spacing: 0.1em;
-    transition: .2s;
+    transition: .4s;
+    border: 2px solid $button-color;
+    background-color: $button-color;
+    color: $color-blue;
     &:hover {
-        font-weight: 700;
-        color: $footer-background;
+        color: $color-blue;
+        border: 2px solid $color-blue;
         //transform: scale(1.1);
     }
 }
@@ -340,7 +343,7 @@ header {
         padding-top: 1.6rem;
     }
     a {
-        padding: 1.4rem 10rem;
+        padding: 1.2rem 10rem;
         margin-top: 3rem;
     }
 }
@@ -372,7 +375,7 @@ footer {
         width: 40px;
         height: 40px;
         font-size: 1.2em;
-        padding-top: 7px;
+        padding-top: 8px;
         margin-top: 0;
         &:hover {
             @include social-media-hover();

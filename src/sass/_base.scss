@@ -3,7 +3,7 @@
 
 $body-font: 'Raleway', sans-serif;
 $second-font: 'Source Sans Pro', sans-serif;
-$font-size-body: 18px;
+$font-size-body: 16px;
 
 //$jumbotronX-background: url(../images/bg1.jpeg);
 $jumbotron-background: url(../images/bg-cyber.jpg);
@@ -14,6 +14,7 @@ $brand-color: #66697e;
 $navbar-color: rgba(255, 255, 255, 0.75);
 $navbar-line-color: rgba(255, 255, 225, .2);
 
+$button-color: rgba(245, 6, 6, 0.8);
 $gallery-background: rgba(193, 200, 217, 0.7);
 $color-blue: rgb(38, 54, 99);
 $media-social-color: rgba(117, 128, 161, 1);
@@ -43,7 +44,7 @@ $padding-team: 1rem;
     text-align: center;
     margin-top: 2rem;
     margin-right: 0.5rem;
-    border: 1px solid $media-social-color;
+    border: 2px solid $media-social-color;
     opacity: 0.5;
     color: $media-social-color;
     transition: .3s;
@@ -52,7 +53,7 @@ $padding-team: 1rem;
 @mixin social-media-hover {
     opacity: 1;
     cursor: pointer;
-    transform: scale(1.2);
+   // transform: scale(1.1);
     color: $color-blue;
-    border: 1px solid $color-blue;
+    border: 2px solid $color-blue;
 }
