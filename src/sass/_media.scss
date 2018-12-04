@@ -1,0 +1,21 @@
+@import "_base";
+
+/* @media (min-width: 992) and (max-width: 1199px) { ... } */
+
+body {
+    font-size: 13px;
+}
+
+@media (min-width: 992) and (max-width: 1199px) {
+
+    // Navbar
+    .navbar {
+        .navbar-brand {
+            padding-left: 0;
+        }
+        ul {
+            padding-right: 0;
+        }
+    }
+
+}
