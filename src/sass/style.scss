@@ -1,19 +1,18 @@
-@import "_base";
-
+@import "base";
 
 body {
     font-family: $body-font;
     font-size: $font-size-body;
     margin: 0;
     padding: 0;
-
 }
 .container {
     width: 80%;
     margin: 0 auto;
     padding: 0;
 }
-// @media (min-width: 1170px) { ... }
+/* @media (min-width: 1200px) { ... }  */
+
 // Header
 header {
     &::after {
@@ -49,32 +48,33 @@ header {
         border-bottom: 1px solid $navbar-line-color;
         margin-top: 1rem;
     }
-}
-.navbar-brand {
-    padding-left: 15rem;
-}
-.navbar-nav {
-    padding-right: 15rem;
-}
-.navbar-nav li a {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 0.9em;
-    color: $navbar-color;
-    letter-spacing: 0.1em;
-    &:hover {
-        opacity: 1;
-        background-color: $brand-color;
-        transform: scale(1.2);
-        font-weight: 600;
+    .navbar-brand {
+        padding-left: 10rem;
     }
-}
-.navbar-toggle {
-    background-color: $brand-color;
-    span {
-        background-color: $navbar-color;
+    .navbar-nav {
+        padding-right: 10rem;
+    }
+    .navbar-nav li a {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 0.9em;
+        color: $navbar-color;
+        letter-spacing: 0.1em;
+        &:hover {
+            opacity: 1;
+            background-color: $brand-color;
+            transform: scale(1.2);
+            font-weight: 600;
+        }
+    }
+    .navbar-toggle {
+        background-color: $brand-color;
+        margin: 0;
+        span {
+            background-color: $navbar-color;
+        }
     }
 }
 //  Jumbotron wrapper
@@ -264,7 +264,7 @@ header {
     h2 {
         font-size: 1.45em;
         font-weight: 600;
-        padding-left: $padding-team;
+        //padding-left: $padding-team;
     }
     h3 {
         font-size: 0.9em;
@@ -272,11 +272,11 @@ header {
         letter-spacing: 1px;
         font-weight: 600;
         color: rgba(84, 66, 61, 0.9);
-        padding-left: $padding-team;
+        //padding-left: $padding-team;
     }
     p {
         font-size: 0.9em;
-        padding-left: $padding-team;
+        //padding-left: $padding-team;
     }
     .fab {
         @include social-media();
@@ -307,7 +307,6 @@ header {
         right: 0;
         bottom: 0;
         display: flex;
-       //justify-content: center;
         align-items: center;
         q {
             font-style: italic;
@@ -399,3 +398,5 @@ footer {
         }
     }
 }
+
+@import "media";

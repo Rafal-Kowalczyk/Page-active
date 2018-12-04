@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,900");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,900");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900");
 .row:after, .row:before {
   display: table;
   content: "";
@@ -19,6 +21,7 @@ body {
   padding: 0;
 }
 
+/* @media (min-width: 1200px) { ... }  */
 header::after {
   content: '';
   background-image: url(../images/bg-cyber.jpg);
@@ -54,15 +57,15 @@ header::after {
   margin-top: 1rem;
 }
 
-.navbar-brand {
-  padding-left: 15rem;
+.navbar .navbar-brand {
+  padding-left: 10rem;
 }
 
-.navbar-nav {
-  padding-right: 15rem;
+.navbar .navbar-nav {
+  padding-right: 10rem;
 }
 
-.navbar-nav li a {
+.navbar .navbar-nav li a {
   padding-top: 15px;
   padding-bottom: 15px;
   text-transform: uppercase;
@@ -72,18 +75,19 @@ header::after {
   letter-spacing: 0.1em;
 }
 
-.navbar-nav li a:hover {
+.navbar .navbar-nav li a:hover {
   opacity: 1;
   background-color: #66697e;
   transform: scale(1.2);
   font-weight: 600;
 }
 
-.navbar-toggle {
+.navbar .navbar-toggle {
   background-color: #66697e;
+  margin: 0;
 }
 
-.navbar-toggle span {
+.navbar .navbar-toggle span {
   background-color: rgba(255, 255, 255, 0.75);
 }
 
@@ -301,7 +305,6 @@ header::after {
 .ourTeam h2 {
   font-size: 1.45em;
   font-weight: 600;
-  padding-left: 1rem;
 }
 
 .ourTeam h3 {
@@ -310,12 +313,10 @@ header::after {
   letter-spacing: 1px;
   font-weight: 600;
   color: rgba(84, 66, 61, 0.9);
-  padding-left: 1rem;
 }
 
 .ourTeam p {
   font-size: 0.9em;
-  padding-left: 1rem;
 }
 
 .ourTeam .fab {
@@ -480,5 +481,188 @@ footer .credits p {
   color: #c1c8d9;
   font-weight: 400;
   letter-spacing: 1px;
+}
+
+.row:after, .row:before {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+/* @media (min-width: 992) and (max-width: 1199px) { ... } */
+body {
+  font-size: 14px;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .navbar .navbar-brand {
+    padding-left: 5rem;
+  }
+  .navbar .navbar-nav {
+    padding-right: 5rem;
+  }
+  .navbar .navbar-nav li a {
+    padding-top: 2rem;
+  }
+  .jumbotron .wrapper h1 {
+    font-size: 4em;
+  }
+  .jumbotron .wrapper p {
+    font-size: 1em;
+  }
+  .jumbotron .wrapper a {
+    margin-top: 7rem;
+  }
+  .ourTeam .ourTeam__box {
+    padding: 2rem;
+  }
+  .ourTeam .fab {
+    padding-top: 7px;
+    margin-right: 0.1rem;
+  }
+  footer .footer__social i {
+    width: 30px;
+    height: 30px;
+    font-size: 1em;
+    padding-top: 7px;
+    margin-right: 0.1rem;
+  }
+}
+
+/* @media (min-width: 768px) and (max-width: 991px) {...} */
+@media (min-width: 768px) and (max-width: 991px) {
+  body {
+    font-size: 12px;
+  }
+  .navbar .navbar-brand {
+    padding-left: 1rem;
+  }
+  .navbar .navbar-brand img {
+    width: 15rem;
+  }
+  .navbar .navbar-nav {
+    padding-right: 0;
+  }
+  .navbar .navbar-nav li a {
+    padding-top: 1.5rem;
+  }
+  .jumbotron .wrapper h1 {
+    font-size: 3.7em;
+  }
+  .jumbotron .wrapper p {
+    font-size: 1.2em;
+    padding: 0 10rem;
+  }
+  .jumbotron .wrapper a {
+    margin-top: 7rem;
+    padding: 1rem 5rem;
+  }
+  .ourTeam .ourTeam__box {
+    padding: 2rem;
+  }
+  .ourTeam .fab {
+    margin-right: 0.1rem;
+    padding-top: 8px;
+  }
+  .clients .carousel-caption q {
+    font-size: 1.2em;
+  }
+  .download {
+    margin-top: 0;
+  }
+  .download h2 {
+    font-size: 1.8em;
+  }
+  .download a {
+    padding: 1rem 7rem;
+  }
+  footer {
+    margin-top: 1rem;
+  }
+  footer .footer__social i {
+    width: 30px;
+    height: 30px;
+    font-size: 1em;
+    padding-top: 7px;
+    margin-right: 0.1rem;
+  }
+}
+
+/* @media (max-width: 767px) { ... } */
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+  .navbar .navbar-header {
+    margin: 0;
+  }
+  .navbar .navbar-brand {
+    padding-left: 0;
+  }
+  .navbar .navbar-brand img {
+    width: 15rem;
+  }
+  .navbar .navbar-nav li a {
+    padding-top: 1.5rem;
+  }
+  .navbar .navbar-collapse {
+    text-align: center;
+    background-color: #263663;
+  }
+  .navbar .navbar-nav {
+    padding: 0;
+    margin: 0;
+  }
+  .navbar .navbar-nav li a:hover {
+    background-color: #7580a1;
+    transform: scale(1);
+  }
+  .jumbotron .wrapper h1 {
+    font-size: 2.8em;
+    padding: 0 3rem;
+  }
+  .jumbotron .wrapper p {
+    font-size: 1em;
+    margin-top: 2rem;
+    padding: 0 5rem;
+  }
+  .jumbotron .wrapper a {
+    margin-top: 7rem;
+    padding: 0.7rem 2rem;
+  }
+  .actions > div {
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+  }
+  h4 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 1.3em;
+  }
+  .ourTeam h2 {
+    font-size: 2em;
+  }
+  .ourTeam h3 {
+    font-size: 1.2em;
+  }
+  .clients {
+    padding: 5rem 0 0 0;
+  }
+  .clients .carousel-indicators {
+    margin-bottom: 0;
+  }
+  .clients .carousel img {
+    width: 100%;
+  }
+  .clients .carousel-caption {
+    position: static;
+  }
+  .clients .carousel-caption q {
+    font-size: 1.2em;
+  }
+  .clients .carousel-caption p {
+    font-size: 1em;
+  }
 }
 /*# sourceMappingURL=style.prefixed.css.map */
