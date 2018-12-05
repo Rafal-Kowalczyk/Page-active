@@ -546,7 +546,8 @@ body {
   }
   .ourTeam .fab {
     margin-right: 0.1rem;
-    padding-top: 8px;
+    padding-top: 6px;
+    font-size: 1.2em;
   }
   .clients .carousel-caption q {
     font-size: 1.2em;
@@ -566,8 +567,8 @@ body {
   footer .footer__social i {
     width: 30px;
     height: 30px;
-    font-size: 1em;
-    padding-top: 7px;
+    font-size: 1.2em;
+    padding-top: 6px;
     margin-right: 0.1rem;
   }
 }
@@ -626,6 +627,9 @@ body {
   }
   .ourTeam h3 {
     font-size: 1.2em;
+  }
+  .ourTeam .fab {
+    padding-top: 7px;
   }
   .clients {
     padding: 5rem 0 0 0;

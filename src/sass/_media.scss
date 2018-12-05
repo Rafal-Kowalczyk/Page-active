@@ -104,7 +104,8 @@ body {
         }
         .fab {
             margin-right: 0.1rem;
-            padding-top: 8px;
+            padding-top: 6px;
+            font-size: 1.2em;
         }
     }
     //Section references
@@ -131,8 +132,8 @@ body {
         .footer__social i {
             width: 30px;
             height: 30px;
-            font-size: 1em;
-            padding-top: 7px;
+            font-size: 1.2em;
+            padding-top: 6px;
             margin-right: 0.1rem;
         }
     }
@@ -209,6 +210,9 @@ body {
         }
         h3 {
             font-size: 1.2em;
+        }
+        .fab {
+            padding-top: 7px;
         }
     }
     //Section references
