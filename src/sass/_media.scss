@@ -142,9 +142,7 @@ body {
 
 @media (max-width: 767px) {
 
-    body {
-        font-size: 14px;
-    }
+
     // Navbar
     .navbar {
         .navbar-header {
@@ -232,8 +230,54 @@ body {
                 font-size: 1em;
             }
         }
-
     }
+    // Section download
+    .download {
+        margin-top: 0;
+        padding: 0 5rem;
+        text-align: center;
+        h2 {
+            font-size: 1.6em;
+        }
+        a {
+            padding: 1rem 5rem;
+        }
+    }
+    // Footer
+    footer {
+        margin-top: 0;
+        .row {
+            padding-top: 0;
+            padding-bottom: 4rem;
+        }
+        h3 {
+            font-size: 1em;
+            margin-bottom: 1rem;
+        }
+        p {
+            font-size: 1em;
+            line-height: 1.2;
+            padding-bottom: 1rem;
+        }
+        .footer__social {
+            padding-bottom: 1rem;
 
-
+            i {
+                width: 30px;
+                height: 30px;
+                font-size: 1em;
+                padding-top: 7px;
+                margin-right: 0.1rem;
+            }
+        }
+        .credits {
+            height: 5rem;
+            p {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                font-size: 1em;
+            }
+        }
+    }
 }

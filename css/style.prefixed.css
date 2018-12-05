@@ -414,7 +414,7 @@ header::after {
 
 footer {
   position: relative;
-  min-height: 34rem;
+  min-height: 30rem;
   background-color: #c1c8d9;
   color: #263663;
   text-align: center;
@@ -427,7 +427,7 @@ footer .row {
 
 footer h3 {
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.2em;
   margin-bottom: 3rem;
 }
@@ -590,9 +590,6 @@ body {
 
 /* @media (max-width: 767px) { ... } */
 @media (max-width: 767px) {
-  body {
-    font-size: 14px;
-  }
   .navbar .navbar-header {
     margin: 0;
   }
@@ -662,6 +659,52 @@ body {
     font-size: 1.2em;
   }
   .clients .carousel-caption p {
+    font-size: 1em;
+  }
+  .download {
+    margin-top: 0;
+    padding: 0 5rem;
+    text-align: center;
+  }
+  .download h2 {
+    font-size: 1.6em;
+  }
+  .download a {
+    padding: 1rem 5rem;
+  }
+  footer {
+    margin-top: 0;
+  }
+  footer .row {
+    padding-top: 0;
+    padding-bottom: 4rem;
+  }
+  footer h3 {
+    font-size: 1em;
+    margin-bottom: 1rem;
+  }
+  footer p {
+    font-size: 1em;
+    line-height: 1.2;
+    padding-bottom: 1rem;
+  }
+  footer .footer__social {
+    padding-bottom: 1rem;
+  }
+  footer .footer__social i {
+    width: 30px;
+    height: 30px;
+    font-size: 1em;
+    padding-top: 7px;
+    margin-right: 0.1rem;
+  }
+  footer .credits {
+    height: 5rem;
+  }
+  footer .credits p {
+    width: 100%;
+    margin: 0;
+    padding: 0;
     font-size: 1em;
   }
 }
