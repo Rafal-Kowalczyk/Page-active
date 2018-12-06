@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,900');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900');
 
-$body-font: 'Raleway', sans-serif;
-$second-font: 'Source Sans Pro', sans-serif;
+$body-font: 'Raleway',
+sans-serif;
+$second-font: 'Source Sans Pro',
+sans-serif;
 $font-size-body: 16px;
 
 //$jumbotronX-background: url(../images/bg1.jpeg);
 $jumbotron-background: url(../images/bg-cyber.jpg);
-$jumbotron-layer-color: rgba(38, 54, 99, 0.7);//rgba(43,46,74, 0.7);
+$jumbotron-layer-color: rgba(38, 54, 99, 0.7); //rgba(43,46,74, 0.7);
 
 $color-white: #fff;
 $brand-color: #66697e;
@@ -24,6 +26,7 @@ $footer-background: rgb(193, 200, 217);
 $padding-team: 1rem;
 
 @mixin clearfix() {
+
     &:after,
     &:before {
         display: table;
@@ -31,6 +34,7 @@ $padding-team: 1rem;
         clear: both;
     }
 }
+
 .row {
     @include clearfix;
 }
@@ -48,10 +52,11 @@ $padding-team: 1rem;
     transition: .3s;
     padding-top: 6px;
 }
+
 @mixin social-media-hover {
     opacity: 1;
     cursor: pointer;
-   // transform: scale(1.1);
+    // transform: scale(1.1);
     color: $color-blue;
     border: 2px solid $color-blue;
 }

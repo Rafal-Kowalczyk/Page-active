@@ -6,11 +6,13 @@ body {
     margin: 0;
     padding: 0;
 }
+
 .container {
     width: 80%;
     margin: 0 auto;
     padding: 0;
 }
+
 /* @media (min-width: 1200px) { ... }  */
 
 // Header
@@ -28,6 +30,7 @@ header {
         background-size: cover;
     }
 }
+
 .layer {
     background-color: $jumbotron-layer-color;
     position: absolute;
@@ -42,18 +45,22 @@ header {
 .navbar {
     top: 1rem;
     left: 0;
-    z-index: 2;
+    z-index: 1;
     right: 0;
+
     .bottom-line {
         border-bottom: 1px solid $navbar-line-color;
         margin-top: 1rem;
     }
+
     .navbar-brand {
         padding-left: 10rem;
     }
+
     .navbar-nav {
         padding-right: 10rem;
     }
+
     .navbar-nav li a {
         padding-top: 15px;
         padding-bottom: 15px;
@@ -62,21 +69,46 @@ header {
         font-size: 0.9em;
         color: $navbar-color;
         letter-spacing: 0.1em;
+        transition: 0.5s;
+
         &:hover {
             opacity: 1;
-            background-color: $brand-color;
+            background-color: transparent;
             transform: scale(1.2);
             font-weight: 600;
         }
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $media-social-color;
+            transition: transform 0.5s;
+            transform-origin: right;
+            transform: scaleY(0);
+            z-index: -1;
+        }
+
+        &:hover:before {
+            transition: transform 0.5s;
+            transform-origin: left;
+            transform: scaleX(1);
+        }
     }
+
     .navbar-toggle {
         background-color: $brand-color;
         margin: 0;
+
         span {
             background-color: $navbar-color;
         }
     }
 }
+
 //  Jumbotron wrapper
 .jumbotron {
     height: 100vh;
@@ -84,6 +116,7 @@ header {
     position: relative;
     padding: 0;
     margin-bottom: 0;
+
     .wrapper {
         position: absolute;
         z-index: 1;
@@ -96,6 +129,7 @@ header {
         width: 100%;
         color: $color-white;
         text-align: center;
+
         h1 {
             text-transform: uppercase;
             font-family: $second-font;
@@ -108,6 +142,7 @@ header {
             padding-right: 1.5rem;
             line-height: 1;
         }
+
         P {
             font-size: 1.3em;
             font-weight: 500;
@@ -117,6 +152,7 @@ header {
             padding-left: 1.5rem;
             padding-right: 1.5rem;
         }
+
         a {
             margin-top: 8rem;
             padding: 1.2rem 6rem;
@@ -124,6 +160,7 @@ header {
         }
     }
 }
+
 .btn {
     text-transform: uppercase;
     font-weight: 700;
@@ -133,6 +170,7 @@ header {
     border: 2px solid $button-color;
     background-color: $button-color;
     color: $color-blue;
+
     &:hover {
         color: $color-blue;
         border: 2px solid $color-blue;
@@ -141,14 +179,16 @@ header {
 }
 
 // Section actions
-.actions > div {
+.actions>div {
     margin-bottom: 2rem;
     margin-top: 10rem;
+
     .actions__box {
         text-align: center;
         font-size: 0.8em;
         padding: 2rem 6rem;
         min-height: 32rem;
+
         &:hover img {
             filter: hue-rotate(190deg) opacity(0.9) saturate(90%);
             transform: rotateY(360deg);
@@ -156,15 +196,18 @@ header {
 
         }
     }
+
     img {
-        transition: filter  .4s ease-in;
+        transition: filter .4s ease-in;
     }
+
     h4 {
         text-transform: uppercase;
         font-weight: 600;
         padding-top: 2rem;
         color: $color-blue;
     }
+
     p {
         padding-top: 1rem;
     }
@@ -173,21 +216,25 @@ header {
 // Section projects
 .gallery {
     padding: 5rem 0 0 0;
+
     .row {
         margin-left: 0;
         margin-right: 0;
     }
+
     .gallery__box {
         padding: 0;
         text-align: center;
         height: 35rem;
         padding: 1px;
     }
+
     .gallery--project {
         height: 100%;
         display: block;
         position: relative;
         overflow: hidden;
+
         &:after {
             content: "";
             position: absolute;
@@ -203,20 +250,25 @@ header {
             transition: visibility .5s, opacity .5s;
             background-color: $gallery-background;
         }
-        &:hover, &:focus{
-             &:after {
+
+        &:hover,
+        &:focus {
+            &:after {
                 visibility: visible;
                 opacity: 1;
             }
+
             .gallery--img {
                 transform: scale(1.1);
             }
+
             .gallery--content {
                 visibility: visible;
                 opacity: 1;
             }
         }
     }
+
     .gallery--img {
         width: 100%;
         height: 100%;
@@ -226,6 +278,7 @@ header {
         transform: scale(1);
         backface-visibility: hidden;
     }
+
     .gallery--content {
         top: 50%;
         right: 0;
@@ -238,12 +291,14 @@ header {
         transition: visibility .5s, opacity .5s;
         transform: translateY(-50%);
         backface-visibility: hidden;
+
         h3 {
             text-transform: uppercase;
             font-size: 2em;
             font-weight: 900;
             letter-spacing: 2px;
         }
+
         p {
             font-weight: 700;
             font-size: 1.2em;
@@ -255,17 +310,21 @@ header {
 .ourTeam {
     padding-top: 10rem;
     padding-bottom: 2rem;
+
     .ourTeam__box {
         padding: 4rem;
     }
+
     img {
         width: 100%;
     }
+
     h2 {
         font-size: 1.45em;
         font-weight: 600;
         //padding-left: $padding-team;
     }
+
     h3 {
         font-size: 0.9em;
         text-transform: uppercase;
@@ -274,12 +333,15 @@ header {
         color: rgba(84, 66, 61, 0.9);
         //padding-left: $padding-team;
     }
+
     p {
         font-size: 0.9em;
         //padding-left: $padding-team;
     }
+
     .fab {
         @include social-media();
+
         &:hover {
             @include social-media-hover();
         }
@@ -292,11 +354,13 @@ header {
 
     .carousel {
         background-color: $color-blue;
+
         img {
             width: 50%;
             height: 100%;
         }
     }
+
     .carousel-caption {
         background-color: $color-blue;
         margin-bottom: 2rem;
@@ -308,11 +372,13 @@ header {
         bottom: 0;
         display: flex;
         align-items: center;
+
         q {
             font-style: italic;
             font-size: calc(16px + 5 * ((100vw - 320px) / 448));
             letter-spacing: 1.5px;
         }
+
         p {
             text-transform: uppercase;
             margin-top: 3rem;
@@ -329,11 +395,13 @@ header {
     justify-content: center;
     min-height: 40rem;
     margin-top: 4rem;
+
     h2 {
         font-size: 2.5em;
         font-weight: 300;
         letter-spacing: 1px;
     }
+
     p {
         text-transform: uppercase;
         font-size: 0.8em;
@@ -341,6 +409,7 @@ header {
         font-weight: 600;
         padding-top: 1.6rem;
     }
+
     a {
         padding: 1.2rem 10rem;
         margin-top: 3rem;
@@ -355,20 +424,24 @@ footer {
     color: $color-blue;
     text-align: center;
     margin-top: 5rem;
+
     .row {
         padding-top: 5rem;
     }
+
     h3 {
         text-transform: uppercase;
         font-weight: 700;
         font-size: 1.2em;
         margin-bottom: 3rem;
     }
+
     p {
         color: media-social-color;
         font-weight: 500;
         line-height: 1.8;
     }
+
     .footer__social i {
         @include social-media();
         width: 40px;
@@ -376,10 +449,12 @@ footer {
         font-size: 1.2em;
         padding-top: 8px;
         margin-top: 0;
+
         &:hover {
             @include social-media-hover();
         }
     }
+
     .credits {
         position: absolute;
         bottom: 0;
@@ -387,6 +462,7 @@ footer {
         left: 0;
         height: 6rem;
         background-color: $color-blue;
+
         p {
             position: absolute;
             top: 50%;

@@ -48,7 +48,7 @@ header::after {
 .navbar {
   top: 1rem;
   left: 0;
-  z-index: 2;
+  z-index: 1;
   right: 0;
 }
 
@@ -73,13 +73,34 @@ header::after {
   font-size: 0.9em;
   color: rgba(255, 255, 255, 0.75);
   letter-spacing: 0.1em;
+  transition: 0.5s;
 }
 
 .navbar .navbar-nav li a:hover {
   opacity: 1;
-  background-color: #66697e;
+  background-color: transparent;
   transform: scale(1.2);
   font-weight: 600;
+}
+
+.navbar .navbar-nav li a:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #7580a1;
+  transition: transform 0.5s;
+  transform-origin: right;
+  transform: scaleY(0);
+  z-index: -1;
+}
+
+.navbar .navbar-nav li a:hover:before {
+  transition: transform 0.5s;
+  transform-origin: left;
+  transform: scaleX(1);
 }
 
 .navbar .navbar-toggle {
@@ -183,7 +204,7 @@ header::after {
 }
 
 .actions > div img {
-  transition: filter  .4s ease-in;
+  transition: filter .4s ease-in;
 }
 
 .actions > div h4 {
@@ -562,7 +583,8 @@ body {
   }
   .ourTeam .fab {
     margin-right: 0.1rem;
-    padding-top: 8px;
+    padding-top: 6px;
+    font-size: 1.2em;
   }
   .clients .carousel-caption q {
     font-size: 1.2em;
@@ -582,8 +604,8 @@ body {
   footer .footer__social i {
     width: 30px;
     height: 30px;
-    font-size: 1em;
-    padding-top: 7px;
+    font-size: 1.2em;
+    padding-top: 6px;
     margin-right: 0.1rem;
   }
 }
@@ -611,7 +633,6 @@ body {
     margin: 0;
   }
   .navbar .navbar-nav li a:hover {
-    background-color: #7580a1;
     transform: scale(1);
   }
   .jumbotron .wrapper h1 {
@@ -642,6 +663,9 @@ body {
   }
   .ourTeam h3 {
     font-size: 1.2em;
+  }
+  .ourTeam .fab {
+    padding-top: 7px;
   }
   .clients {
     padding: 5rem 0 0 0;
