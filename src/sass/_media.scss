@@ -13,37 +13,45 @@ body {
         .navbar-brand {
             padding-left: 5rem;
         }
+
         .navbar-nav {
             padding-right: 5rem;
         }
+
         .navbar-nav li a {
             padding-top: 2rem;
         }
     }
+
     //  Jumbotron wrapper
     .jumbotron {
         .wrapper {
             h1 {
-            font-size: 4em;
+                font-size: 4em;
             }
+
             p {
                 font-size: 1em;
             }
+
             a {
                 margin-top: 7rem;
             }
         }
     }
+
     // Section team
     .ourTeam {
         .ourTeam__box {
             padding: 2rem;
         }
+
         .fab {
             padding-top: 7px;
             margin-right: 0.1rem;
         }
     }
+
     // Footer
     footer {
         .footer__social i {
@@ -66,48 +74,57 @@ body {
         font-size: 12px;
     }
 
-     // Navbar
-     .navbar {
+    // Navbar
+    .navbar {
         .navbar-brand {
             padding-left: 1rem;
+
             img {
                 width: 15rem;
             }
         }
+
         .navbar-nav {
             padding-right: 0;
         }
+
         .navbar-nav li a {
             padding-top: 1.5rem;
         }
     }
+
     //  Jumbotron wrapper
     .jumbotron {
         .wrapper {
             h1 {
-            font-size: 3.7em;
+                font-size: 3.7em;
             }
+
             p {
                 font-size: 1.2em;
                 padding: 0 10rem;
             }
+
             a {
                 margin-top: 7rem;
                 padding: 1rem 5rem;
             }
         }
     }
+
     // Section team
     .ourTeam {
         .ourTeam__box {
             padding: 2rem;
         }
+
         .fab {
             margin-right: 0.1rem;
             padding-top: 6px;
             font-size: 1.2em;
         }
     }
+
     //Section references
     .clients {
         .carousel-caption {
@@ -116,19 +133,24 @@ body {
             }
         }
     }
+
     // Section download
     .download {
         margin-top: 0;
+
         h2 {
             font-size: 1.8em;
         }
+
         a {
             padding: 1rem 7rem;
         }
     }
+
     // Footer
     footer {
         margin-top: 1rem;
+
         .footer__social i {
             width: 30px;
             height: 30px;
@@ -149,120 +171,148 @@ body {
         .navbar-header {
             margin: 0;
         }
+
         .navbar-brand {
             padding-left: 0;
+
             img {
                 width: 15rem;
             }
         }
+
         .navbar-nav li a {
             padding-top: 1.5rem;
         }
+
         .navbar-collapse {
             text-align: center;
             background-color: $color-blue;
         }
+
         .navbar-nav {
             padding: 0;
             margin: 0;
+
             li a {
 
                 &:hover {
-                   // background-color: $media-social-color;
+                    // background-color: $media-social-color;
                     transform: scale(1);
                 }
             }
         }
     }
+
     //  Jumbotron wrapper
     .jumbotron {
         .wrapper {
             h1 {
-            font-size: 2.8em;
-            padding: 0 3rem;
+                font-size: 2.8em;
+                padding: 0 3rem;
             }
+
             p {
                 font-size: 1em;
                 margin-top: 2rem;
                 padding: 0 5rem;
             }
+
             a {
                 margin-top: 7rem;
                 padding: 0.7rem 2rem;
             }
         }
     }
+
     // Section actions
-    .actions > div {
+    .actions>div {
         margin-bottom: 2rem;
         margin-top: 4rem;
     }
+
     h4 {
         font-size: 2em;
     }
+
     p {
         font-size: 1.3em;
     }
+
     // Section team
     .ourTeam {
         h2 {
             font-size: 2em;
         }
+
         h3 {
             font-size: 1.2em;
         }
+
         .fab {
             padding-top: 7px;
         }
     }
+
     //Section references
     .clients {
         padding: 5rem 0 0 0;
+
         .carousel-indicators {
             margin-bottom: 0;
         }
+
         .carousel img {
             width: 100%;
         }
+
         .carousel-caption {
             position: static;
 
             q {
                 font-size: 1.2em;
             }
+
             p {
                 font-size: 1em;
             }
         }
     }
+
     // Section download
     .download {
         margin-top: 0;
         padding: 0 5rem;
         text-align: center;
+
         h2 {
             font-size: 1.6em;
         }
+
         a {
             padding: 1rem 5rem;
         }
     }
+
     // Footer
     footer {
         margin-top: 0;
+
         .row {
             padding-top: 0;
             padding-bottom: 4rem;
         }
+
         h3 {
             font-size: 1em;
             margin-bottom: 1rem;
         }
+
         p {
             font-size: 1em;
             line-height: 1.2;
             padding-bottom: 1rem;
         }
+
         .footer__social {
             padding-bottom: 1rem;
 
@@ -274,8 +324,10 @@ body {
                 margin-right: 0.1rem;
             }
         }
+
         .credits {
             height: 5rem;
+
             p {
                 width: 100%;
                 margin: 0;

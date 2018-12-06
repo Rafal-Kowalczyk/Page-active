@@ -197,7 +197,7 @@ header::after {
 }
 
 .actions > div img {
-  transition: filter  .4s ease-in;
+  transition: filter .4s ease-in;
 }
 
 .actions > div h4 {
