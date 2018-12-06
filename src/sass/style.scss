@@ -42,7 +42,7 @@ header {
 .navbar {
     top: 1rem;
     left: 0;
-    z-index: 2;
+    z-index: 1;
     right: 0;
     .bottom-line {
         border-bottom: 1px solid $navbar-line-color;
@@ -62,11 +62,30 @@ header {
         font-size: 0.9em;
         color: $navbar-color;
         letter-spacing: 0.1em;
+        transition: 0.5s;
         &:hover {
             opacity: 1;
-            background-color: $brand-color;
+            background-color: transparent;
             transform: scale(1.2);
             font-weight: 600;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $media-social-color;
+            transition: transform 0.5s;
+            transform-origin: right;
+            transform: scaleY(0);
+            z-index: -1;
+        }
+        &:hover:before {
+            transition: transform 0.5s;
+            transform-origin: left;
+            transform: scaleX(1);
         }
     }
     .navbar-toggle {

@@ -168,9 +168,10 @@ body {
             li a {
 
                 &:hover {
-                    background-color: $media-social-color;
+                   // background-color: $media-social-color;
                     transform: scale(1);
                 }
+               
             }
         }
     }
