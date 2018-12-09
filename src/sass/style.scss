@@ -425,6 +425,23 @@ footer {
     text-align: center;
     margin-top: 5rem;
 
+    #slideUp {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        border: 2px solid $button-color;
+        z-index: 2;
+        background-color: $footer-background;
+        color: $navbar-color;
+        padding-top: 0.6rem;
+        position: fixed;
+        bottom: 27rem;
+        right: -23rem;
+        .fas {
+            color: $button-color;
+        }
+    }
+
     .row {
         padding-top: 5rem;
     }
@@ -474,5 +491,7 @@ footer {
         }
     }
 }
+
+
 
 @import "media";

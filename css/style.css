@@ -426,6 +426,24 @@ footer {
   margin-top: 5rem;
 }
 
+footer #slideUp {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border: 2px solid rgba(245, 6, 6, 0.8);
+  z-index: 2;
+  background-color: #c1c8d9;
+  color: rgba(255, 255, 255, 0.75);
+  padding-top: 0.6rem;
+  position: fixed;
+  bottom: 27rem;
+  right: -23rem;
+}
+
+footer #slideUp .fas {
+  color: rgba(245, 6, 6, 0.8);
+}
+
 footer .row {
   padding-top: 5rem;
 }
