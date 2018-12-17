@@ -151,6 +151,17 @@ body {
     footer {
         margin-top: 1rem;
 
+        #slideUp {
+            width: 4rem;
+            height: 4rem;
+            padding-top: 0.5rem;
+            bottom: 28rem;
+
+            .fas {
+                font-size: 2em;
+            }
+        }
+
         .footer__social i {
             width: 30px;
             height: 30px;
@@ -194,14 +205,17 @@ body {
             margin: 0;
 
             li a {
-
                 &:hover {
                     // background-color: $media-social-color;
                     transform: scale(1);
                 }
             }
         }
+        .navbar-toggle {
+            margin-top: 1.8rem;
+        }
     }
+
 
     //  Jumbotron wrapper
     .jumbotron {
@@ -225,7 +239,7 @@ body {
     }
 
     // Section actions
-    .actions>div {
+    .actions > div {
         margin-bottom: 2rem;
         margin-top: 4rem;
     }
@@ -296,6 +310,16 @@ body {
     // Footer
     footer {
         margin-top: 0;
+        #slideUp {
+            width: 4rem;
+            height: 4rem;
+            padding-top: 0.4rem;
+            bottom: 28.2rem;
+
+            .fas {
+                font-size: 2em;
+            }
+        }
 
         .row {
             padding-top: 0;

@@ -7,14 +7,20 @@ $(function () {
         }, 2500);
     });
 
+    $(document).on('click','.navbar-collapse',function(e) {
+        if( $(e.target).is('a') ) {
+            $(this).collapse('hide');
+        }
+    });
+
     var $window = $(window);
     var $slideAd = $('#slideUp');
-    var endZone = $('#footer').offset().top - $window.height() - 500;
+    var endZone = $('#actions').offset().top;
 
     $window.on('scroll', function() {
 
         if (endZone < $window.scrollTop()) {
-            $slideAd.animate({ 'right': '70px' }, 500);
+            $slideAd.animate({ 'right': '30px' }, 500);
         } else {
         $slideAd.stop(true).animate({ 'right': '-360px' }, 100);
         }

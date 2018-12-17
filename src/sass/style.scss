@@ -43,10 +43,11 @@ header {
 
 // Navbar
 .navbar {
-    top: 1rem;
+    top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 2;
     right: 0;
+    background-color: $color-blue;
 
     .bottom-line {
         border-bottom: 1px solid $navbar-line-color;
@@ -54,6 +55,7 @@ header {
     }
 
     .navbar-brand {
+        margin-top: 1rem;
         padding-left: 10rem;
     }
 
@@ -62,6 +64,7 @@ header {
     }
 
     .navbar-nav li a {
+        margin-top: 1rem;
         padding-top: 15px;
         padding-bottom: 15px;
         text-transform: uppercase;
@@ -70,13 +73,18 @@ header {
         color: $navbar-color;
         letter-spacing: 0.1em;
         transition: 0.5s;
+        opacity: 0.8;
 
         &:hover {
             opacity: 1;
             background-color: transparent;
-            transform: scale(1.2);
+            //transform: scale(1.1);
             font-weight: 600;
         }
+        &:focus {
+            background-color: $color-blue;
+        }
+
 
         &:before {
             content: '';
@@ -437,8 +445,13 @@ footer {
         position: fixed;
         bottom: 27rem;
         right: -23rem;
+        opacity: 0.4;
+        &:hover {
+            opacity: 1;
+        }
         .fas {
             color: $button-color;
+            font-size: 3em;
         }
     }
 

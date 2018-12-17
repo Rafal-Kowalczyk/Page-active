@@ -5,7 +5,7 @@
   "scripts": {
     "test": "npm run test:html && npm run test:js",
     "test:html": "glob-run nu-html-checker *.html",
-    "test:js": "jshint js",
+    "test:js": "jshint js/*.js",
     "init-project": "npm run init:dirs && npm run init:files && npm run init:gitignore && npm run init:npm-install",
     "init:dirs": "mkdirp src css images js",
     "init:files": "touch README.md index.html src/sass/style.scss js/script.js",
